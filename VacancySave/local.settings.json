@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AWS_ACCESS_KEY_ID": "YCAJEYQclJXp9m_4GDVPPdzB1",
+    "AWS_SECRET_ACCESS_KEY": "YCN_eCoz3rC58nQHRDFtiNQzjqEy6DzxWNL7enue",
+    "AWS_ENDPOINT": "https://storage.yandexcloud.net"
+  }
+}

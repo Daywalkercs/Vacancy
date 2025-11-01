@@ -23,11 +23,11 @@ namespace VacancySave
                 string query = Uri.EscapeDataString("C# Developer");
                 string url = $"https://api.hh.ru/vacancies?text={query}&per_page=100";
 
-                var response = await httpClient.GetAsync(url);
+                HttpResponseMessage response = await httpClient.GetAsync(url);
                 response.EnsureSuccessStatusCode();
 
                 string content = await response.Content.ReadAsStringAsync();
-                var json = JsonDocument.Parse(content);
+                JsonDocument json = JsonDocument.Parse(content);
                 vacanciesCount = json.RootElement.GetProperty("found").GetInt32();
             }
             catch (Exception ex)
